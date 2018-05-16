@@ -9,4 +9,4 @@ If you are controlling your donkey car directly from it's web server, it will br
 
 I have included my modified version of manage.py in this repo in case you would like to use it how I did. Please note that this modification doesn't seem to play nice with the regular web server driving mode (manage.py drive [without --js]), so you might want to keep two copies of manage.py if you switch back and forth a lot. Any pull requests on methods to avoid this issue are welcome!
 
-The lap time table is powered by a widget from (https://www.thedash.com/). This give a nice simple web widget, backed by a google doc spreadsheet. Easy to update Team names and lap times from another computer / phone without editing the dashboard source code constantly.
+The lap time table is powered by a widget from (https://www.thedash.com/). This provides a nice simple web widget, backed by a google doc spreadsheet. Easy to update Team names and lap times from another computer / phone without editing the dashboard source code constantly.
