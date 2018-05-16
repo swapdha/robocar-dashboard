@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>Robocar Rally Dashboard</title>
+
+<meta http-equiv="refresh" content="60">
+
+<style>
+    .stream {
+
+      // 3 wide, 3 tall
+      width: 320px;
+      height: 240px;
+
+      position: relative;
+      top: 0px;
+      left: 0px;
+    }
+
+    html * {
+       // font-size: 1em !important;
+       // color: #000 !important;
+       font-family: Arial !important;
+    }
+    </style>
+
+<script type='text/javascript'>
+    function loadImage(id, src) {
+      var ts = Date.now(), img = new Image;
+
+      img.onerror = function() {
+        //if(Date.now() - ts < 10000) {
+          setTimeout(function() { img.src = src; }, 5000);
+        //}
+      }
+      img.onload = function() {
+        document.getElementById(id).src = src;
+      }
+      img.src = src;
+    }
+  </script>
+</head>
+
+<body style="background-color:#e9ecf0;font-color:#FFF">
+
+<h1 align="center" style="font-size:52">Robocar Rally Dashboard</h1>
+<table width="100%">
+        <tr>
+         <td>
+                <iframe src="https://www.thedash.com/dashboard/S1mpr4L3f/embed" height="768px" width="640" frameborder="0"></iframe>
+</td>
+<td>
+    <table align="center" border="0">
+        <tr>
+            <td align="center">Team 1<br><img class="stream" id="image1" src="offair.jpg" /></td>
+        <script>loadImage("image1", "http://10.0.0.1:8887/video");</script>
+
+            <td align="center">Team 2<br><img class="stream" id="image2" src="offair.jpg" /></td>
+        <script>loadImage("image2", "http://10.0.0.2:8887/video");</script>
+
+            <td align="center">Team 3<br><img class="stream" id="image3" src="offair.jpg" /></td>
+        <script>loadImage("image3", "http://10.0.0.3:8887/video");</script>
+        </tr>
+        <tr>
+            <td align="center">Team 4<br><img class="stream" id="image4" src="offair.jpg" /></td>
+        <script>loadImage("image4", "http://10.0.0.4:8887/video");</script>
+
+            <td align="center">Team 5<br><img class="stream" id="image5" src="offair.jpg" /></td>
+        <script>loadImage("image5", "http://10.0.0.5:8887/video");</script>
+
+            <td align="center">Team 6<br><img class="stream" id="image6" src="offair.jpg" /></td>
+        <script>loadImage("image6", "http://10.0.0.6:8887/video");</script>
+        </tr>
+        <tr>
+            <td align="center">Team 7<br><img class="stream" id="image7" src="offair.jpg" /></td>
+        <script>loadImage("image7", "http://10.0.0.7:8887/video");</script>
+
+            <td align="center">Team 8<br><img class="stream" id="image8" src="offair.jpg" /></td>
+        <script>loadImage("image8", "http://10.0.0.8:8887/video");</script>
+
+            <td align="center">Team 9<br><img class="stream" id="image9" src="offair.jpg" /></td>
+        <script>loadImage("image8", "http://10.0.0.9:8887/video");</script>
+        </tr>
+    </table>
+</td>
+</tr>
+</table>
+</body>
+</html>
