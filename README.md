@@ -1,5 +1,6 @@
 # Robocar Rally Dashboard website
 
+![Off-Air dashboard](robocar-rally-dashboard-offair.png)
 
 This is a dashboard I used at a recent Robocar Rally event. It displays live camera feeds from Raspberry Pi powered "Donkey Cars" (http://www.donkeycar.com/) as well as a lap time table in an iframe.
 
